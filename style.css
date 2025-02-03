@@ -1,0 +1,943 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+  /* width: 100vh; */
+  /* position: relative; */
+}
+
+/*-------------- სათავე + ნავიგაცია ------------*/
+
+/* ------------ სათავე ------------- */
+header {
+  width: 100%;
+  /* height: 134px; */
+
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  top: 0;
+  /* position: fixed; */
+  position: relative;
+  
+}
+.container_header_register {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.header_register {
+  color: white;
+
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.header_register_tag {
+  color: white;
+  transition: 0.5s;
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.header_register_tag:hover {
+  text-decoration: none;
+  color: rgb(92, 255, 92);
+}
+.header_register_X {
+  position: absolute;
+  right: 100px;
+
+  cursor: pointer;
+}
+
+/* ----------------- ნავიგაცია ------------------------- */
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 24px;
+  /* position: fixed; */
+}
+
+.container_rac_mainc_unda_gaqres{
+  display: flex;
+  /* width: 100%; */
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav_header_title {
+  font-family: Alfa Slab One;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43.81px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  font-weight: bold;
+}
+
+.nav_navigacia {
+  display: flex;
+  gap: 24px;
+}
+
+.nav_navigacia_tags,
+.nav_navigacia_texts {
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav_search_bar_div {
+  background-color: #f0f0f0;
+  width: 586px;
+  height: 48px;
+  border-radius: 62px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 12px 16px 12px;
+  gap: 12px;
+}
+
+.nav_search_bar {
+  all: unset; /* Resets all styles applied by the browser */
+  font-family: Arial, sans-serif; /* Set a custom font if needed */
+  font-size: 16px; /* Adjust font size if needed */
+  color: black; /* Text color */
+  outline: none; /* Removes the focus outline */
+  background: transparent; /* Removes background */
+  border: none; /* Removes border */
+  width: 100%;
+}
+
+.nav_navigacia_logos {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.nav_navigacia_logos img{
+    cursor: pointer;
+}
+
+
+
+/* ------------ სათაური / ბრენდი ------------- */
+
+.container_title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 663px;
+  background-color: #f2f0f1;
+
+  margin-top: 24px;
+}
+
+.container_title_content {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 50px;
+}
+
+.title_main {
+  width: 577px;
+  height: 178px;
+  top: 234px;
+  left: 100px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Alfa Slab One;
+  font-size: 64px;
+  font-weight: 400;
+  font-weight: bold;
+  line-height: 64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.title_description {
+  width: 545px;
+  /* height: 33px; */
+  top: 442px;
+  left: 100px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  margin-top: 30px;
+}
+
+.button_shop_now {
+  color: white;
+  background-color: #000000;
+  width: 210px;
+  height: 52px;
+  border-radius: 62px;
+  margin-top: 32px;
+  cursor: pointer;
+
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.button_shop_now:hover {
+  background-color: #444444; /* Darker shade of black for a hover effect */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a soft shadow for depth */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on text */
+  letter-spacing: 2px; /*Increase letter spacing when hovered for more emphasis */
+}
+
+
+.container_raodenobebis_description {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 64px;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.international_brands_number,
+.quality_products_number,
+.happy_customers_number {
+  width: 107px;
+  height: 54px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Satoshi;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+}
+
+
+.img_girl_boy_min {
+  /* width: 100%; */
+  height: 100%;
+}
+
+
+/* -------- ბრენდების ლოგოების კრებული -----------  */
+
+
+.container_brands_logos{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 122px;
+    padding: 2px;
+}
+
+.container_only_logo{
+    display: flex;
+    /* align-items: start; */
+    justify-content: center;
+}
+.container_only_logo_1, .container_only_logo_5{
+    align-items: start;
+}
+.container_only_logo_2, .container_only_logo_3, .container_only_logo_4{
+    align-items: center;
+}
+
+
+
+
+
+/* ------------- კონტენტი ------------ */
+
+
+.container_content_title{
+  margin-top: 68px;
+  display: flex;
+  justify-content: center;
+}
+.content_title{
+  width: 422px;
+  height: 66px;
+  top: 987px;
+  left: 508px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Alfa Slab One;
+  font-size: 48px;
+  font-weight: 400;
+  font-weight: bolder;
+  line-height: 65.71px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+
+
+/* -------- სერვერიდან გადმოტანილი ინფორმაციის გასტილვა (წინასწარ) ------------- */
+
+#container_content_cards{
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+}
+
+.card{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.card img{
+  width: 250px;
+  height: 300px;
+  background-color: #F0EEED;
+  /* object-fit: cover; */
+  border-radius: 20px;
+}
+
+.card .description{
+  padding: 20px;
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+}
+
+.card .price{
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+
+  /* width: 56px; */
+  /* height: 32px; */
+  top: 380px;
+  left: 630px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Satoshi;
+  font-size: 24px;
+  font-weight: 700;
+  /* line-height: 32.4px; */
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.product_title{
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+}
+
+
+
+/* ---------- DRESS STYLE ----------- */
+
+.container_dress_style{
+  width: 90%;
+  background-color: #F0F0F0;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 75px;
+}
+
+.title_dress_style{
+  font-family: Integral CF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.container_models{
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  gap: 20px;
+}
+.container_models_row1{
+  display: flex;
+  gap: 20px;
+}
+
+.container_models_row2{
+  display: flex;
+  gap: 20px;
+}
+
+.container_models_column{
+  display: none;
+}
+
+/* ------------   OUR HAPPY CUSTOMERS  ---------------- */
+
+.our_happy_customers{
+  font-family: Integral CF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  margin-top: 112px;
+  margin-left: 100px;
+}
+
+
+
+.container_shepasebebi{
+  /* display: flex; */
+  position: relative;
+  /* margin-top: 43px; */
+  padding: 107px 49px 21px;
+}
+
+.isrebi{
+  position: absolute;
+  top: 43px;
+  right: 33px;
+  gap: 16px;
+
+  display: flex;
+  align-items: center;
+}
+.isrebi img{
+  cursor: pointer;
+}
+
+
+.samive_shepaseba{
+  display: flex;
+  padding: 40px;
+
+  gap: 20px 50px;
+
+}
+
+.shepaseba_tito{
+  /* background-color: aqua; */
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 28px 32px 50px;
+
+}
+
+
+.shepaseba_name_container{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.shepaseba_nickname{
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 15px;
+
+}
+.shepase_paragraph{
+  margin-top: 12px;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+
+
+/* ------ footer (black) ------------ */
+
+footer{
+  background-color: #F0F0F0;
+  position: relative;
+  width: 100%;
+  /* height: 200px; */
+  margin-top: 129px;
+
+  padding: 140px 100px 182px;
+}
+
+
+
+.container_registration{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  border-radius: 20px;
+  left: 0;
+  right: 0;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 36px 64px 36px 64px;
+
+  position: absolute;
+  top: -90px;
+  
+}
+
+
+.registration_title{
+  font-family: Integral CF;
+  font-size: 40px;
+  font-weight: 700;
+  font-weight: bold;
+  line-height: 45px;
+  width: 50%;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  
+}
+
+.container_input{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  height: 48px;
+  padding: 12px 16px 12px;
+  gap: 12px;
+}
+.container_input input{
+  width: 100%;
+  all: unset; /* Resets all styles applied by the browser */
+  font-family: Arial, sans-serif; /* Set a custom font if needed */
+  font-size: 16px; /* Adjust font size if needed */
+  color: black; /* Text color */
+  outline: none; /* Removes the focus outline */
+  background: transparent; /* Removes background */
+  border: none; /* Removes border */
+  
+}
+.registration_buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.registration_button{
+  height: 48px;
+  border-radius: 60px;
+  width: 349px;
+  
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 500;
+  font-weight: bold;
+  line-height: 21.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+.registration_button:hover {
+  background-color: #007f0f; /* Darker shade of black for a hover effect */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a soft shadow for depth */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on text */
+  letter-spacing: 2px; /*Increase letter spacing when hovered for more emphasis */
+}
+
+
+/*  ------------ footer ---------- */
+
+.container_agwerebiDaLinkebi{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.container_satauri{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container_social_networks{
+  display: flex;
+  gap: 12px;
+}
+.footer_description{
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 250px;
+
+}
+
+
+.container_linkebi{
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 50px;
+}
+
+
+.info_cont{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.info_title{
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+
+}
+.info_links{
+  text-decoration: none;
+  color: #00000099;
+}
+
+
+
+
+.div-line {
+  border-top: 1px solid black; 
+  width: 80%;
+  left: 0;
+  right: 0;
+  /* width: 70%; */
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 50px;
+}
+
+
+
+.ukiduresoba{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.ukiduresi_text{
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px; 
+  text-align: right; 
+  text-underline-position: from-font;
+}
+
+
+
+
+/* ----------- საძიებო კონტეინერის გასტილვა ----------*/
+
+.nav_search_bar_div{
+  position: relative;
+}
+
+#searchResults{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* justify-content: center; */
+  /* align-items: center; */
+  top: 100%;
+  max-width: 400px;
+  max-height: 350px; /* Adjust based on card size */
+  overflow-y: auto; /* Enable vertical scrolling */
+  /* width: 100%; */
+  /* padding: 10px; */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: Background color */
+  border: 1px solid #ddd; /* Optional: Border for visibility */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+  /* height: 40px; */
+}
+
+.card1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card1 img{
+  width: 250px;
+  height: 300px;
+  background-color: #F0EEED;
+  /* object-fit: cover; */
+  border-radius: 20px;
+}
+
+.card1 .description{
+  padding: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+.card1 .price{
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+
+  /* width: 56px; */
+  /* height: 32px; */
+  top: 380px;
+  left: 630px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Satoshi;
+  font-size: 24px;
+  font-weight: 700;
+  /* line-height: 32.4px; */
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+
+
+
+.ra_unda_gachndes{
+  display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 390px) {
+  /* Styles for mobile screens */
+  .header_register_X{
+    position: static;
+  }
+  .container_rac_mainc_unda_gaqres{
+    display: none;
+  }
+  .ra_unda_gachndes{
+    display: block;
+  }
+
+  .container_brands_logos{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 300px;
+  }
+
+
+
+
+  .container_title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .container_title_content{
+    width: 100%;
+    align-items: center;
+  }
+  .title_main{
+    /* width: 80%; */
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 34px;
+    /* text-align: center; */
+    height: 93px;
+    width: 315px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+  }
+  .title_description{
+    width: 90%;
+    /* margin: 16px 16px 0 ; */
+  }
+  .button_shop_now {
+    margin-top: 24px;
+  }
+  .container_raodenobebis_description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  .img_girl_boy_min {
+    width: 100%;
+    height: 448px;
+  }
+
+
+
+
+
+  .container_content_title{
+    margin-top: 50px;
+    width: 100%;
+  }
+  #container_content_cards{
+    width: 100%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card{
+    /* width: 40%; */
+    justify-content: space-evenly;
+  }
+  .card img{
+    width: 100%;
+    height: auto;
+  }
+  
+
+  .container_dress_style{
+    padding-bottom: 24px;
+  }
+  .title_dress_style{
+    font-size: 32px;
+    line-height: 36px;
+    width: 250px;
+  }
+  .container_models{
+    display: flex;
+    flex-direction: column;
+  }
+  .container_models_column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .container_models_row1, .container_models_row2{
+    display: none;
+  }
+
+
+  .shepaseba_meore, .shepaseba_mesame{
+    display: none;
+  }
+  .samive_shepaseba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our_happy_customers{
+    width: 100%;
+    /* text-align: left; */
+  }
+
+
+
+  /* -------------- footer */
+  .container_registration{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    width: 358px;
+    gap: 12px;
+    padding-bottom: 28px;
+    padding: 32px 24px 28px 37px;
+  }
+  .registration_title{
+    width: 100%;
+    font-family: Integral CF;
+    font-size: 32px;  
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+  }
+  .registration_buttons{
+    width: 311px;
+    margin-top: 20px;
+  }
+  .registration_button{
+    width: 100%;
+  }
+}
