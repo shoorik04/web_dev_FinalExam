@@ -772,7 +772,10 @@ footer{
 }
 
 
-
+.container_baratebi{
+  display: flex;
+  gap: 12px;
+}
 
 .ra_unda_gachndes{
   display: none;
@@ -912,6 +915,10 @@ footer{
 
 
   /* -------------- footer */
+  footer{
+    padding: 190px 17px 77px;
+  }
+
   .container_registration{
     display: flex;
     flex-direction: column;
@@ -919,18 +926,14 @@ footer{
     align-items: center;
     width: 358px;
     gap: 12px;
+    top: -150px;
     padding-bottom: 28px;
     padding: 32px 24px 28px 37px;
   }
   .registration_title{
     width: 100%;
-    font-family: Integral CF;
     font-size: 32px;  
-    font-weight: 700;
     line-height: 35px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 
   }
   .registration_buttons{
@@ -939,5 +942,69 @@ footer{
   }
   .registration_button{
     width: 100%;
+  }
+
+  .container_agwerebiDaLinkebi{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 31px; */
+    width: 100%;
+
+  }
+  .container_satauri{
+    gap: 14px;
+    width: 100%;
+    text-align: left;
+  }
+  .nav_header_title{
+    font-size: 28.85px;
+    font-weight: 700;
+    line-height: 34.62px;
+    text-align: left;
+    }
+    .footer_description{
+      width: 100%;
+    }
+  .container_social_networks{
+    margin-top: 6px;
+  }
+
+  .container_linkebi{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 24px;
+    /* gap: 16px; */
+  }
+  .info_cont{
+    gap: 16px;
+  }
+  .info_title{
+    font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  /* font-weight: 500; */
+  }
+
+  .div-line{
+    margin-top: 40px;
+    width: 100%;
+  }
+
+
+  .ukiduresoba{
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ukiduresi_text{
+    color: #00000099;
+  }
+
+  .container_baratebi{
+    width: 100%;
+    gap: 5px;
+
   }
 }
